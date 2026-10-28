@@ -1,7 +1,18 @@
+
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from rest_framework_simplejwt.views import TokenObtainPairView
-from .views import RegisterView, LoginView, RefreshView, MeView, ChatbotViewSet, ConversationViewSet, KnowledgeViewSet, SettingsView, DashboardView
+
+from .views import (
+    RegisterView,
+    LoginView,
+    RefreshView,
+    MeView,
+    ChatbotViewSet,
+    ConversationViewSet,
+    KnowledgeViewSet,
+    SettingsView,
+    DashboardView,
+)
 
 router = DefaultRouter()
 router.register("chatbots", ChatbotViewSet, basename="chatbot")
