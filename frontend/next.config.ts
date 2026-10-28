@@ -2,7 +2,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  skipTrailingSlashRedirect: true,
+  trailingSlash: true,
 
   async rewrites() {
     const backendUrl =
